@@ -15,6 +15,7 @@ except ImportError:
 import glad.specification
 from glad.generator.c import CGenerator
 from glad.generator.rust import RustGenerator
+from glad.generator.clover import CloverGenerator
 from glad.parse import Specification
 
 
@@ -27,7 +28,8 @@ SPECIFICATION_ENTRY_POINT = 'glad.specification'
 
 DEFAULT_GENERATORS = dict(
     c=CGenerator,
-    rust=RustGenerator
+    rust=RustGenerator,
+    clover=CloverGenerator
 )
 DEFAULT_SPECIFICATIONS = dict()
 
